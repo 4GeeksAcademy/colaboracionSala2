@@ -1,3 +1,105 @@
 body{
     background: #BDBDBD;
 }
+/* CSS para la sección de Portfolio - Angelo Castro */
+
+#angelo-portfolio-section {
+    background-color: white;
+    padding: 4rem 0;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+#angelo-portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+#angelo-portfolio-header {
+    margin-bottom: 3rem;
+}
+
+#angelo-portfolio-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+
+#angelo-portfolio-description {
+    font-size: 1.1rem;
+    color: #6c757d;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+/* Tarjetas de proyecto */
+.angelo-project-card {
+    text-align: center;
+    background: #fff;
+    transition: transform 0.2s ease;
+}
+.angelo-project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Imágenes de proyecto */
+.angelo-project-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 700 / 400;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.angelo-project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #007bff;  /* azul */
+    margin-bottom: 0.75rem;
+}
+
+.angelo-project-text {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.4;
+}
+
+/* Indicador rojo */
+#angelo-portfolio-indicator {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: #dc3545;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+#angelo-portfolio-indicator span {
+    background-color: #fff3f3;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #angelo-portfolio-section {
+        padding: 2rem 0;
+    }
+    #angelo-portfolio-title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    #angelo-portfolio-description {
+        text-align: center;
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    .angelo-project-title {
+        font-size: 1.3rem;
+    }
+    #angelo-portfolio-indicator {
+        text-align: center;
+    }
+}
