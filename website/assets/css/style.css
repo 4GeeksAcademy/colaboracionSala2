@@ -78,10 +78,8 @@ body{
     line-height: 1.4;
 }
 
-/* Indicador rojo */
-#angelo-portfolio-indicator {
-=======
-/* Asegurar que el texto esté bien alineado */
+
+/*sevices.css*/
 #angelo-services-text-col h2 {
     font-size: 2.2rem;
     letter-spacing: -0.5px;
@@ -114,16 +112,7 @@ body{
     transform: scale(1.02);
 }
 
-/* Indicador rojo "services.html" */
-#angelo-services-indicator {
->>>>>>> services.html
-    font-family: 'Courier New', monospace;
-    font-size: 0.9rem;
-    color: #dc3545;
-    border-top: 1px solid #eee;
-    padding-top: 1rem;
-    margin-top: 2rem;
-}
+
 <<<<<<< HEAD
 #angelo-portfolio-indicator span {
 =======
