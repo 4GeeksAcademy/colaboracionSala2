@@ -1,35 +1,73 @@
 body {
     background: #BDBDBD;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* CSS gitpara la sección de Portfolio - Angelo Castro */
-=======
 
-/* CSS para la sección de Portfolio - Angelo Castro */
->>>>>>> protfolio.html
+/* ========== CSS de Angelo Castro ========== */
+/* Sección Services y Portfolio */
 
-#angelo-portfolio-section {
-=======
-
-
+/* ----- Sección Services ----- */
 #angelo-services-section {
->>>>>>> services.html
     background-color: white;
     padding: 4rem 0;
     font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 }
 
-<<<<<<< HEAD
-#angelo-portfolio-container {
-=======
 #angelo-services-container {
->>>>>>> services.html
     max-width: 1200px;
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
+#angelo-services-text-col h2 {
+    font-size: 2.2rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 1rem;
+}
+
+#angelo-services-text-col .text-dark {
+    color: #000 !important;
+    font-weight: 700;
+}
+
+#angelo-services-text-col .text-secondary {
+    color: #6c757d !important;
+    font-weight: 400;
+}
+
+#angelo-services-paragraph {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #6c757d;
+}
+
+/* Imagen circular */
+#angelo-services-image {
+    border: 2px solid #f0f0f0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+#angelo-services-image:hover {
+    transform: scale(1.02);
+}
+
+/* Indicador (opcional, si se usa en HTML) */
+#angelo-services-indicator span {
+    background-color: #fff3f3;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+}
+
+/* ----- Sección Portfolio ----- */
+#angelo-portfolio-section {
+    background-color: white;
+    padding: 4rem 0;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+#angelo-portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /* Encabezado */
 #angelo-portfolio-header {
     margin-bottom: 3rem;
@@ -83,77 +121,16 @@ body {
     line-height: 1.4;
 }
 
-<<<<<<< HEAD
-
-/*sevices.css*/
-#angelo-services-text-col h2 {
-    font-size: 2.2rem;
-    letter-spacing: -0.5px;
-    margin-bottom: 1rem;
-}
-
-#angelo-services-text-col .text-dark {
-    color: #000 !important;
-    font-weight: 700;
-}
-
-#angelo-services-text-col .text-secondary {
-    color: #6c757d !important;
-    font-weight: 400;
-}
-
-#angelo-services-paragraph {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    color: #6c757d;
-}
-
-/* Estilo para la imagen circular */
-#angelo-services-image {
-    border: 2px solid #f0f0f0;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-}
-#angelo-services-image:hover {
-    transform: scale(1.02);
-}
-
-
-<<<<<<< HEAD
+/* Indicador Portfolio (opcional) */
 #angelo-portfolio-indicator span {
-=======
-#angelo-services-indicator span {
->>>>>>> services.html
     background-color: #fff3f3;
     padding: 0.2rem 0.8rem;
     border-radius: 20px;
 }
 
-<<<<<<< HEAD
-=======
->>>>>>> protfolio.html
-/* Responsive */
+/* ----- Responsive (unificado) ----- */
 @media (max-width: 768px) {
-    #angelo-portfolio-section {
-        padding: 2rem 0;
-    }
-    #angelo-portfolio-title {
-        font-size: 2.2rem;
-        text-align: center;
-    }
-    #angelo-portfolio-description {
-        text-align: center;
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
-    .angelo-project-title {
-        font-size: 1.3rem;
-    }
-<<<<<<< HEAD
-    #angelo-portfolio-indicator {
-=======
-/* Ajustes responsive para pantallas pequeñas */
-@media (max-width: 768px) {
+    /* Services responsive */
     #angelo-services-section {
         padding: 2rem 0;
     }
@@ -170,10 +147,23 @@ body {
         height: 200px !important;
     }
     #angelo-services-indicator {
->>>>>>> services.html
         text-align: center;
     }
+
+    /* Portfolio responsive */
+    #angelo-portfolio-section {
+        padding: 2rem 0;
+    }
+    #angelo-portfolio-title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    #angelo-portfolio-description {
+        text-align: center;
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    .angelo-project-title {
+        font-size: 1.3rem;
+    }
 }
-=======
-}
->>>>>>> protfolio.html
