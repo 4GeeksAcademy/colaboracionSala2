@@ -228,3 +228,22 @@ body {
       border-color: #2569a3;
     }
 
+/* CSS Navbar */
+  .custom-navbar {
+      background: linear-gradient(to bottom, #1e1e1e, #141414);
+      min-height: 60px;
+    }
+
+    .navbar-brand {
+      color: #d0d0d0 !important;
+      font-size: 20px;
+    }
+
+    .nav-link {
+      color: #bdbdbd !important;
+      margin-right: 20px;
+    }
+
+    .nav-link:hover {
+      color: #ffffff !important;
+    }
