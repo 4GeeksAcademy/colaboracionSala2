@@ -19,10 +19,16 @@ body {
     margin: 0 auto;
 }
 
+/* NUEVO: alineación izquierda para toda la columna de texto */
+#angelo-services-text-col {
+    text-align: left;
+}
+
 #angelo-services-text-col h2 {
     font-size: 2.2rem;
     letter-spacing: -0.5px;
     margin-bottom: 1rem;
+    text-align: left;  /* forzado */
 }
 
 #angelo-services-text-col .text-dark {
@@ -39,6 +45,7 @@ body {
     font-size: 1.1rem;
     line-height: 1.5;
     color: #6c757d;
+    text-align: left;  /* forzado */
 }
 
 /* Imagen circular */
@@ -51,14 +58,7 @@ body {
     transform: scale(1.02);
 }
 
-/* Indicador (opcional, si se usa en HTML) */
-#angelo-services-indicator span {
-    background-color: #fff3f3;
-    padding: 0.2rem 0.8rem;
-    border-radius: 20px;
-}
-
-/* ----- Sección Portfolio ----- */
+/* ----- Sección Portfolio (sin cambios) ----- */
 #angelo-portfolio-section {
     background-color: white;
     padding: 4rem 0;
@@ -123,7 +123,7 @@ body {
     line-height: 1.4;
 }
 
-/* Indicador Portfolio (opcional) */
+/* Indicador Portfolio (opcional) - sin cambios */
 #angelo-portfolio-indicator span {
     background-color: #fff3f3;
     padding: 0.2rem 0.8rem;
@@ -132,27 +132,25 @@ body {
 
 /* ----- Responsive (unificado) ----- */
 @media (max-width: 768px) {
-    /* Services responsive */
+    /* Services responsive - modificado: izquierda */
     #angelo-services-section {
         padding: 2rem 0;
     }
     #angelo-services-text-col h2 {
         font-size: 1.6rem;
-        text-align: center;
+        text-align: left;   /* antes center, ahora left */
     }
     #angelo-services-paragraph {
-        text-align: center;
+        text-align: left;   /* antes center, ahora left */
         font-size: 1rem;
     }
     #angelo-services-image {
         width: 200px !important;
         height: 200px !important;
     }
-    #angelo-services-indicator {
-        text-align: center;
-    }
+    /* Eliminado el #angelo-services-indicator porque ya no se usa */
 
-    /* Portfolio responsive */
+    /* Portfolio responsive (sin cambios) */
     #angelo-portfolio-section {
         padding: 2rem 0;
     }
