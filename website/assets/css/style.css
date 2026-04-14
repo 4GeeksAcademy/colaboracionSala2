@@ -47,21 +47,6 @@ body{
     transform: scale(1.02);
 }
 
-/* Indicador rojo "services.html" */
-#angelo-services-indicator {
-    font-family: 'Courier New', monospace;
-    font-size: 0.9rem;
-    color: #dc3545;
-    border-top: 1px solid #eee;
-    padding-top: 1rem;
-    margin-top: 2rem;
-}
-#angelo-services-indicator span {
-    background-color: #fff3f3;
-    padding: 0.2rem 0.8rem;
-    border-radius: 20px;
-}
-
 /* Ajustes responsive para pantallas pequeñas */
 @media (max-width: 768px) {
     #angelo-services-section {
@@ -78,8 +63,5 @@ body{
     #angelo-services-image {
         width: 200px !important;
         height: 200px !important;
-    }
-    #angelo-services-indicator {
-        text-align: center;
     }
 }
