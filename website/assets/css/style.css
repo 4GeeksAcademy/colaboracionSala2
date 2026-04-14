@@ -5,7 +5,6 @@ body {
 }
 
 /* ========== CSS de Angelo Castro ========== */
-/* Sección Services y Portfolio */
 
 /* ----- Sección Services ----- */
 #angelo-services-section {
@@ -19,7 +18,7 @@ body {
     margin: 0 auto;
 }
 
-/* NUEVO: alineación izquierda para toda la columna de texto */
+/* Alineo el texto a la izquierda como en el diseño */
 #angelo-services-text-col {
     text-align: left;
 }
@@ -28,7 +27,7 @@ body {
     font-size: 2.2rem;
     letter-spacing: -0.5px;
     margin-bottom: 1rem;
-    text-align: left;  /* forzado */
+    text-align: left; 
 }
 
 #angelo-services-text-col .text-dark {
@@ -45,20 +44,21 @@ body {
     font-size: 1.1rem;
     line-height: 1.5;
     color: #6c757d;
-    text-align: left;  /* forzado */
+    text-align: left;
 }
 
-/* Imagen circular */
+/* Foto de perfil circular */
 #angelo-services-image {
     border: 2px solid #f0f0f0;
     box-shadow: 0 8px 20px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
 }
+
 #angelo-services-image:hover {
     transform: scale(1.02);
 }
 
-/* ----- Sección Portfolio (sin cambios) ----- */
+/* ----- Sección Portfolio ----- */
 #angelo-portfolio-section {
     background-color: white;
     padding: 4rem 0;
@@ -70,9 +70,10 @@ body {
     margin: 0 auto;
 }
 
-/* Encabezado */
+/* Header del portafolio alineado a la izquierda */
 #angelo-portfolio-header {
     margin-bottom: 3rem;
+    text-align: left;
 }
 
 #angelo-portfolio-title {
@@ -83,24 +84,26 @@ body {
     letter-spacing: -1px;
 }
 
+/* El texto ahora ocupa todo el ancho disponible para que cuadre con las fotos */
 #angelo-portfolio-description {
     font-size: 1.1rem;
     color: #6c757d;
     line-height: 1.5;
-    max-width: 800px;
+    max-width: 100%; 
+    text-align: left;
 }
 
-/* Tarjetas de proyecto */
+/* Tarjetas de los proyectos */
 .angelo-project-card {
-    text-align: center;
+    text-align: left;
     background: #fff;
     transition: transform 0.2s ease;
 }
+
 .angelo-project-card:hover {
     transform: translateY(-5px);
 }
 
-/* Imágenes de proyecto */
 .angelo-project-img {
     width: 100%;
     height: auto;
@@ -113,7 +116,7 @@ body {
 .angelo-project-title {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #007bff;  /* azul */
+    color: #007bff; 
     margin-bottom: 0.75rem;
 }
 
@@ -123,48 +126,27 @@ body {
     line-height: 1.4;
 }
 
-/* Indicador Portfolio (opcional) - sin cambios */
-#angelo-portfolio-indicator span {
-    background-color: #fff3f3;
-    padding: 0.2rem 0.8rem;
-    border-radius: 20px;
-}
-
-/* ----- Responsive (unificado) ----- */
+/* ----- Responsive ----- */
 @media (max-width: 768px) {
-    /* Services responsive - modificado: izquierda */
     #angelo-services-section {
         padding: 2rem 0;
     }
-    #angelo-services-text-col h2 {
-        font-size: 1.6rem;
-        text-align: left;   /* antes center, ahora left */
+    
+    /* Mantengo la alineación a la izquierda en móviles también */
+    #angelo-services-text-col h2,
+    #angelo-services-paragraph,
+    #angelo-portfolio-title,
+    #angelo-portfolio-description {
+        text-align: left;
     }
-    #angelo-services-paragraph {
-        text-align: left;   /* antes center, ahora left */
-        font-size: 1rem;
-    }
+
     #angelo-services-image {
         width: 200px !important;
         height: 200px !important;
     }
-    /* Eliminado el #angelo-services-indicator porque ya no se usa */
 
-    /* Portfolio responsive (sin cambios) */
     #angelo-portfolio-section {
         padding: 2rem 0;
-    }
-    #angelo-portfolio-title {
-        font-size: 2.2rem;
-        text-align: center;
-    }
-    #angelo-portfolio-description {
-        text-align: center;
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
-    .angelo-project-title {
-        font-size: 1.3rem;
     }
 }
 /* ========== CSS de Luis Timaure ========== */
