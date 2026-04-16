@@ -1,8 +1,12 @@
-body{
-    background: #BDBDBD;
+body {
+       background-color: #ffffff;
+      font-family: Arial, sans-serif;
+
 }
 
+/* ========== CSS de Angelo Castro ========== */
 
+/* ----- Sección Services ----- */
 #angelo-services-section {
     background-color: white;
     padding: 4rem 0;
@@ -14,11 +18,16 @@ body{
     margin: 0 auto;
 }
 
-/* Asegurar que el texto esté bien alineado */
+/* Alineo el texto a la izquierda como en el diseño */
+#angelo-services-text-col {
+    text-align: left;
+}
+
 #angelo-services-text-col h2 {
     font-size: 2.2rem;
     letter-spacing: -0.5px;
     margin-bottom: 1rem;
+    text-align: left; 
 }
 
 #angelo-services-text-col .text-dark {
@@ -35,33 +44,186 @@ body{
     font-size: 1.1rem;
     line-height: 1.5;
     color: #6c757d;
+    text-align: left;
 }
 
-/* Estilo para la imagen circular */
+/* Foto de perfil circular */
 #angelo-services-image {
     border: 2px solid #f0f0f0;
     box-shadow: 0 8px 20px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
 }
+
 #angelo-services-image:hover {
     transform: scale(1.02);
 }
 
-/* Ajustes responsive para pantallas pequeñas */
+/* ----- Sección Portfolio ----- */
+#angelo-portfolio-section {
+    background-color: white;
+    padding: 4rem 0;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+#angelo-portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header del portafolio alineado a la izquierda */
+#angelo-portfolio-header {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+#angelo-portfolio-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+
+/* El texto ahora ocupa todo el ancho disponible para que cuadre con las fotos */
+#angelo-portfolio-description {
+    font-size: 1.1rem;
+    color: #6c757d;
+    line-height: 1.5;
+    max-width: 100%; 
+    text-align: left;
+}
+
+/* Tarjetas de los proyectos */
+.angelo-project-card {
+    text-align: left;
+    background: #fff;
+    transition: transform 0.2s ease;
+}
+
+.angelo-project-card:hover {
+    transform: translateY(-5px);
+}
+
+.angelo-project-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 700 / 400;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.angelo-project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #007bff; 
+    margin-bottom: 0.75rem;
+}
+
+.angelo-project-text {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.4;
+}
+
+/* ----- Responsive ----- */
 @media (max-width: 768px) {
     #angelo-services-section {
         padding: 2rem 0;
     }
-    #angelo-services-text-col h2 {
-        font-size: 1.6rem;
-        text-align: center;
+    
+    /* Mantengo la alineación a la izquierda en móviles también */
+    #angelo-services-text-col h2,
+    #angelo-services-paragraph,
+    #angelo-portfolio-title,
+    #angelo-portfolio-description {
+        text-align: left;
     }
-    #angelo-services-paragraph {
-        text-align: center;
-        font-size: 1rem;
-    }
+
     #angelo-services-image {
         width: 200px !important;
         height: 200px !important;
     }
+
+    #angelo-portfolio-section {
+        padding: 2rem 0;
+    }
 }
+/* ========== CSS de Luis Timaure ========== */
+/* CSS Contacto */
+ .contact-section {
+      padding: 60px 0;
+    }
+
+    .contact-title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    .contact-text {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #444;
+      max-width: 1200px;
+      margin-bottom: 40px;
+    }
+
+    .contact-box {
+      border: 1px solid #ddd;
+      background: #f8f8f8;
+      padding: 35px 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
+    }
+
+    .form-label-custom {
+      font-weight: 700;
+      color: #333;
+      text-align: right;
+      padding-top: 10px;
+    }
+
+    .form-control {
+      border-radius: 2px;
+      box-shadow: none;
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    .btn-submit {
+      background-color: #2f80c9;
+      border-color: #2f80c9;
+      padding: 10px 28px;
+      font-size: 1.1rem;
+    }
+
+    .btn-submit:hover {
+      background-color: #2569a3;
+      border-color: #2569a3;
+    }
+
+/* CSS Navbar */
+  .custom-navbar {
+      background: linear-gradient(to bottom, #1e1e1e, #141414);
+      min-height: 60px;
+    }
+
+    .navbar-brand {
+      color: #d0d0d0 !important;
+      font-size: 20px;
+    }
+
+    .nav-link {
+      color: #bdbdbd !important;
+      margin-right: 20px;
+    }
+
+    .nav-link:hover {
+      color: #ffffff !important;
+    }
